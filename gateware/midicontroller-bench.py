@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     sim = Simulator(dut)
     sim.add_clock(1.0/60e6, domain="usb")
-    sim.add_clock(1.0/3e6,  domain="jt51")
+    sim.add_clock(1.0/3.584e6,  domain="jt51")
     sim.add_sync_process(usb_process, domain="usb")
     sim.add_sync_process(jt51_process, domain="jt51")
 
